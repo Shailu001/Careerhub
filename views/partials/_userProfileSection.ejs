@@ -1,0 +1,20 @@
+<li class="nav-item nav-profile dropdown font-class user-profile">
+    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+        <img src="<%=authorProfile.image%>" alt="profile" />
+        <span class="nav-profile-name"></span>
+    </a>
+    <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+        <a href="/profile/<%= authorProfile._id %>" class="dropdown-item">
+            <i class="mdi mdi-account text-primary"></i>
+            Profile
+        </a>
+        <a href="/about" class="dropdown-item">
+            <i class="mdi mdi-phone text-primary"></i>
+            About us
+        </a>
+        <a href="/auth/logout" class="dropdown-item">
+            <i class="mdi mdi-logout text-primary"></i>
+            Logout
+        </a>
+    </div>
+</li>
